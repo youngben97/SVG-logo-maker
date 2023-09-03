@@ -1,5 +1,7 @@
 //Packages/Modules
-const getInput = require('./lib/getInput.js')
+const { readFile, writeFile } = require('fs/promises');
+const getInput = require('./lib/getInput.js');
+const generateSVG = require('./lib/generateSVG.js');
 const { Circle, Triangle, Square } = require('./lib/shapes.js');
 
 
