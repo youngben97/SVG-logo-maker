@@ -1,18 +1,18 @@
 //Packages/Modules
-const { readFile, writeFile } = require('fs/promises');
 const getInput = require('./lib/getInput.js');
-const generateSVG = require('./lib/generateSVG.js');
-const { Circle, Triangle, Square, shapeSelect } = require('./lib/shapes.js');
+const { generateSVG, writeSVG } = require('./lib/generateSVG.js');
+const { shapeSelect } = require('./lib/shapes.js');
 
 
 function init() {
 getInput()
     .then((response) => shapeSelect(response))
     .then((selectedShape) => {
-        console.log(selectedShape)
+        writeSVG('./examples/example.svg', generateSVG(selectedShape))
     })
 };
 
+//next you need to pass selected shape to generate svg and then pass that to writeFile
 
 init();
 
