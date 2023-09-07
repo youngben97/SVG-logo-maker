@@ -1,4 +1,4 @@
 <svg width='300' height='200'>
-    <circle cx="150" cy="100" r="100" fill="brown"/>
-    <text x="150" y="100" font-size="40" text-anchor="middle" alignment-baseline="middle" fill=white>poo</text>
+    <circle cx="150" cy="100" r="100" fill="blue"/>
+    <text x="150" y="100" font-size="40" text-anchor="middle" alignment-baseline="middle" fill=#FFFFFF>HFU</text>
     </svg>
